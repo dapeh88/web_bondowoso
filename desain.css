@@ -1,0 +1,335 @@
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 700px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+.logo{
+    color: white;
+    margin-top: 2px;
+}
+
+#tentang {
+    padding-top: 345px;
+}
+.slide1{
+    background: linear-gradient(rgb(43, 39, 39,0.3),rgba(3,3,3,2)),url(kawah.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-attachment:fixed;    
+}
+.bwstrs{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 21px;
+    float: left;
+    width: 35px;
+    width: 80px;
+}
+.judul{
+    letter-spacing: 25px;
+}
+.judulll{
+    letter-spacing: 15px;
+}
+.logobws{
+    
+    display: flex;
+    margin-left: 40px;
+    margin-top: 18px;
+    float: left;
+    width: 180px;
+    height: 50px;
+}
+.bon{
+    font-family: 'Prata', serif;
+    float: left;
+    margin-left: 20px;
+    padding: 20px 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.bon a{
+    text-decoration:none ;
+    color: white;
+    display: flex;
+}
+.nav{
+    background: rgba(177, 173, 173, 0.2);
+    position: absolute;
+    top:0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+.nav ul{
+    list-style: none;
+    cursor: pointer;
+    float: right;
+    margin-left: 200px;
+}
+.nav li a{
+    color: white;
+}
+.nav ul li{
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    color: transparent;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 30px 25px;
+    font-weight: 400;
+    margin-left: 25px;
+    font-weight: bold;
+    transition: all 0.8s ease;
+    position: relative;
+    z-index: 2;
+}
+.nav ul li::after{
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    height: 2%;
+    border-bottom: 2px solid #fff;
+    transform: scaleX(0);
+    transition: 0.7s;
+    z-index: 0;
+}
+.nav ul li:hover::after{
+    transform: scaleX(0.6);
+}
+.well{
+    text-align: center;
+    color: white;
+    font-family:'Libre Baskerville', serif;
+    font-size: 50px;
+}
+.button{
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid rgba(255,255,255);
+    border-radius: 25px;
+    font-family: 'EB Garamond', serif;
+}
+.tenbws{
+    /*background: linear-gradient(rgb(43, 39, 39,2),rgba(3,3,3,0.3)),url(oke.jpg);*/
+    background-color: black;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display:flex ;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    font-size: 150%;
+    color: white;
+    
+}
+.tnt{
+    align-items: center;
+    margin-left: 50px;
+}
+
+.tnt h2 {
+    position: relative;
+    bottom: 150px;
+}
+
+.tnt p {
+    position: relative;
+    bottom: 155px;
+}
+
+.foto{
+    background-color:  rgb(255, 255, 255);
+    height: 20vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 150%;
+    color:rgb(0, 0, 0);
+    font-family: 'Lora', serif;
+}
+.galerii{
+    font-size: 150%;
+}
+.foto{
+    border: 2px solid rgb(0, 0, 0);
+}
+.gambar{
+    height: 115vh;
+    display:flex ;
+    align-items: center;
+    justify-content: left;
+    flex-direction: column;
+    width: 100%;
+    font-size: 150%;
+   background-color: #ffffff;
+}
+
+.gambar img{
+    /* margin-bottom: 100%;
+    margin-left: 125px; */
+    width: 100%;
+    height: 100%;
+
+}
+.gambar .baris{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.isi{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: black;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    text-align: center;
+}
+.galery,.galeryy,.galeryyy{
+    width: 350px;
+    height: 200px;
+    position: relative;
+    margin: 20px;
+}
+.galery:hover .isi{
+    transform: scaleY(1);
+    transition: 0.7s;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+.kontakbaru{
+    background: linear-gradient(rgb(43, 39, 39,0.7),rgba(3,3,3,0.3)),url(picijen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    font-size: 150%;
+    
+}
+.contact-sec{
+    padding: 80px;
+    height: 50vh;
+
+}
+.contact-sec h1{
+    text-align: center;
+    color: #ddd;
+    height: 90px;
+}
+.border{
+    width: 100px;
+    height: 10px;
+    background: rgb(240, 240, 240);
+    margin: 10px auto;
+}
+.contact{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+.contact-sec h1{
+    font-family: 'Hind Siliguri', sans-serif;
+}
+.contact-text{
+    justify-content: center;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0px;
+    border: 0;
+    background-color: #111;
+    padding: 20px 40px;
+    outline: none;
+    color: #ddd;
+    transition: 0.3s;
+
+}
+.contact-text:focus{
+    box-shadow: 0 0 15px 4px #34495e;
+}
+textarea.contact-text{
+    resize: none;
+    height: 90px;
+}
+.contact-btn{
+    color: #ddd;
+    float: right;
+    border: 0;
+    background: #111;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.contact-btn:hover{
+    background: #34495e;
+}
